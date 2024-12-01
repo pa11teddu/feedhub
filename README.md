@@ -39,7 +39,10 @@ This project is a full-stack application built with Flask (for the backend) and 
 
 To run this project locally, follow these steps:
 
-1. Clone the repository
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/ranjithreddy-31/flask-react.git
+   cd flask-react
 2. Run backend server on port A
     ```bash
     cd backend
