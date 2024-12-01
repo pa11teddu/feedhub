@@ -1,0 +1,310 @@
+:root {
+    --background-color: #f0f2f5; /* Light grey background */
+    --container-background-color: #ffffff; /* White background for containers */
+    --text-color: #050505;
+    --secondary-text-color: #65676b;
+    --border-color: #dddfe2;
+    --hover-background-color: #f2f3f5;
+    --box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    --primary-button-color: #1877f2;
+    --primary-button-hover-color: #166fe5;
+    --secondary-button-color: #e4e6eb;
+    --secondary-button-hover-color: #d8dadf;
+    --message-color: #1877f2;
+}
+
+.dark-mode {
+    --background-color: #18191a;
+    --container-background-color: #242526;
+    --text-color: #e4e6eb;
+    --secondary-text-color: #b0b3b8;
+    --border-color: #3a3b3c;
+    --hover-background-color: #3a3b3c;
+    --box-shadow: 0 1px 2px rgba(255, 255, 255, 0.1);
+    --primary-button-color: #80bfff;
+    --primary-button-hover-color: #66a3ff;
+    --secondary-button-color: #3a3b3c;
+    --secondary-button-hover-color: #484a4d;
+    --message-color: #80bfff;
+}
+
+.add-feed-container {
+    background-color: var(--background-color);
+    border-radius: 8px;
+    box-shadow: var(--box-shadow);
+    padding: 12px;
+    margin-bottom: 20px;
+}
+
+.add-feed-prompt {
+    color: var(--secondary-text-color);
+    font-size: 17px;
+    padding: 12px;
+    border-radius: 20px;
+    background-color: var(--container-background-color);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-feed-prompt:hover {
+    background-color: var(--hover-background-color);
+}
+
+.add-feed-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.feed-input {
+    border: none;
+    font-size: 16px;
+    padding: 12px;
+    margin-bottom: 10px;
+    resize: none;
+    background-color: var(--container-background-color);
+    border-radius: 6px;
+    color: var(--text-color);
+}
+
+.feed-input:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(24, 119, 242, 0.2);
+}
+
+.heading-input {
+    font-weight: bold;
+}
+
+.content-input {
+    min-height: 100px;
+}
+
+.feed-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid var(--border-color);
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+.action-button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.photo-button {
+    background-color: var(--secondary-button-color);
+    color: var(--text-color);
+}
+
+.photo-button:hover {
+    background-color: var(--secondary-button-hover-color);
+}
+
+.buttons-group {
+    display: flex;
+    gap: 10px;
+}
+
+.post-button {
+    background-color: var(--primary-button-color);
+    color: #fff;
+}
+
+.post-button:hover {
+    background-color: var(--primary-button-hover-color);
+}
+
+.cancel-button {
+    background-color: var(--secondary-button-color);
+    color: var(--text-color);
+}
+
+.cancel-button:hover {
+    background-color: var(--secondary-button-hover-color);
+}
+
+.photo-preview {
+    font-size: 14px;
+    color: var(--secondary-text-color);
+    margin-bottom: 10px;
+    justify-content: center;
+}
+
+.message {
+    margin-top: 10px;
+    font-size: 14px;
+    color: var(--message-color);
+}
+
+.edit-post-container {
+    background-color: var(--background-color);
+    border-radius: 8px;
+    box-shadow: var(--box-shadow);
+    padding: 12px;
+    margin-bottom: 20px;
+}
+
+.edit-post-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.edit-heading-input,
+.edit-content-textarea {
+    border: none;
+    font-size: 16px;
+    padding: 12px;
+    margin-bottom: 10px;
+    resize: none;
+    background-color: var(--container-background-color);
+    border-radius: 6px;
+    color: var(--text-color);
+}
+
+.edit-heading-input:focus,
+.edit-content-textarea:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(24, 119, 242, 0.2);
+}
+
+.edit-heading-input {
+    font-weight: bold;
+}
+
+.edit-content-textarea {
+    min-height: 100px;
+}
+
+.edit-photo-input {
+    margin-bottom: 10px;
+    max-width: 60%;
+}
+
+.edit-photo-preview {
+    max-width: 40%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.edit-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.update-button,
+.cancel-button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.update-button {
+    background-color: var(--primary-button-color);
+    color: #fff;
+}
+
+.update-button:hover {
+    background-color: var(--primary-button-hover-color);
+}
+
+.cancel-button {
+    background-color: var(--secondary-button-color);
+    color: var(--text-color);
+}
+
+.cancel-button:hover {
+    background-color: var(--secondary-button-hover-color);
+}
+
+.edit-photo-label {
+    display: inline-block;
+    padding: 8px 12px;
+    background-color: var(--secondary-button-color);
+    color: var(--text-color);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.edit-photo-label:hover {
+    background-color: var(--secondary-button-hover-color);
+}
+
+.edit-photo-input {
+    display: none;
+}
+
+.edit-photo-preview-container {
+    margin-top: 10px;
+}
+
+.edit-photo-preview-text {
+    font-size: 14px;
+    color: var(--secondary-text-color);
+    margin-bottom: 5px;
+}
+
+.beautify-button {
+    /* background-color: var(--primary-button-color); */
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 10px; /* Increase padding for larger size */
+    font-size: 24px; /* Increase font size for larger symbol */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.beautify-button:hover {
+    background-color: var(--primary-button-hover-color);
+    transform: scale(1.2); /* Enlarge on hover */
+}
+
+/* Update the feed-actions to accommodate the new button */
+.feed-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid var(--border-color);
+    padding-top: 10px;
+    margin-top: 10px;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+/* Adjust the buttons-group to maintain its position */
+.buttons-group {
+    display: flex;
+    gap: 10px;
+    margin-left: auto; /* This will push the group to the right */
+}
+
+/* For smaller screens, give some vertical space between buttons */
+@media (max-width: 600px) {
+    .feed-actions {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .action-button {
+        margin-bottom: 10px;
+    }
+
+    .buttons-group {
+        margin-left: 0;
+        align-self: flex-end;
+    }
+}
